@@ -1,0 +1,89 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.helloWorld {
+  overflow: hidden;
+  padding: 1em;
+  background-color: #8e7c5b;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  font-family: Impact, Charcoal, sans-serif;
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.topHeader {
+  text-align: left;
+  margin-bottom: 20px;
+
+  h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+  }
+}
+
+.contentRow {
+  display: flex;
+  align-items: flex-start;
+
+  h3 {
+    font-size: 22px;
+      }
+
+}
+
+.leftContent {
+  width: 60%;
+}
+
+.welcomeImage {
+  width: 30%; /* adjust as needed */
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.blackSection {
+  background-color: black;
+  color: #8e7c5b;
+  width: calc(100% + 2em); /* counteracts parent padding of 1em each side */
+  margin-left: -1em;       /* pull to left edge */
+  margin-top: 50px;
+  height: 400px;
+
+  h1 {
+    text-align: center;
+    font-size: 25px;
+  }
+
+  h2{
+    margin-left: 40px;
+    font-size: 18px;
+  }
+
+  .blackSectionImage {
+    width: 100%;      /* full width of section */
+    height: auto;     /* maintain aspect ratio */
+    margin-top: 1em;  /* spacing above image */
+  }
+
+}
